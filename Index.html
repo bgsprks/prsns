@@ -213,11 +213,7 @@
         // --- Logika Scanner QR ---
         let html5QrcodeScanner;
         let isProcessing = false;
-        let qrcodeLib = null;
-
-        <IfModule mod_headers.c>
-            Header set Permissions-Policy "camera=*"
-        </IfModule>
+        let qrcodeLib = null; 
         
         document.addEventListener('DOMContentLoaded', () => {
             html5QrcodeScanner = new Html5QrcodeScanner(
